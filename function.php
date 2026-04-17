@@ -3,20 +3,17 @@
  *@package aidephpinfo
  */
 /*
-Plugin Name: Aide - PHP Info
-Plugin URI: https://aidecorp.com/
+Plugin Name: Aide :: PHP Info
+Plugin URI: https://aide247.com/
 Description: This plugin is develop for show php info of your server. This will add a menu in admin panel called "PHP Info".
-Author: Aide Corporation
+Author: Aide247
 Version: 1.0.0
 Last Updated : "February 15, 2022",
-Author URI: https://aidecorp.com/
+Author URI: https://aide247.com/
 Text Domain: aidephpinfo
 Domain Path: /languages
 */
 
-// ini_set('display_errors', '1');
-// ini_set('display_startup_errors', '1');
-// error_reporting(E_ALL);
 
 defined("ABSPATH") or die("Hey, you can not access this file, you silly human!");
 
@@ -128,7 +125,6 @@ class AidePHPInfo
     */
     public function aide_phpinfo_admin_menu()
     {
-        $icon_url = AIDE_PHPINFO_PLUGIN_URL . "assets/images/z-portal-icon.png";
         $mainmenu = add_menu_page(
             __("Aide - PHP Info", "aidephpinfo"), // Page Title
             __("PHP Info", "aidephpinfo"), // Menu Title
